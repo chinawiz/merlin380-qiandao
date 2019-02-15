@@ -5,5 +5,5 @@
     "md5": "107ed0673553c517e940ccfe8894d088", 
     "module": "qiandao", 
     "title": "签到dog", 
-    "version": "1.4"
+    "version": "2.1"
 }

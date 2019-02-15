@@ -81,7 +81,9 @@ var _responseLen;
 var noChange = 0;
 var params_input = ["qiandao_time"];
 var params_check = ["qiandao_enable"];
-var params_sites = ["koolshare", "baidu", "v2ex", "hostloc", "acfun", "bilibili", "smzdm", "xiami", "163music", "miui", "52pojie", "kafan", "right", "mydigit"];
+// var params_sites = ["koolshare", "baidu", "v2ex", "hostloc", "acfun", "bilibili", "smzdm", "xiami", "163music", "miui", "52pojie", "kafan", "right", "mydigit"];
+var params_sites = ["baidu","v2ex","hostloc","acfun","bilibili","163music","miui","52pojie","kafan","smzdm","zimuzu","gztown","meizu","hdpfans","chh","koolshare","right","huawei","jd"];
+
 function E(e) {
 	return (typeof(e) == 'string') ? document.getElementById(e) : e;
 }
@@ -235,7 +237,7 @@ function tab_switch(){
 }
 
 function update_visibility(r) {
-	var params_sites = ["koolshare", "baidu", "v2ex", "hostloc", "acfun", "bilibili", "smzdm", "xiami", "163music", "miui", "52pojie", "kafan", "right", "mydigit"];
+	var params_sites = ["baidu","v2ex","hostloc","acfun","bilibili","163music","miui","52pojie","kafan","smzdm","zimuzu","gztown","meizu","hdpfans","chh","koolshare","right","huawei","jd"];
 	for (var i = 0; i < params_sites.length; i++) {
 		if(E("qiandao_" + params_sites[i]).checked){
 			E("_qiandao_" + params_sites[i]).style.display = ""
@@ -432,20 +434,25 @@ function reload_Soft_Center() {
 												<tr>
 													<th style="width:18%">需要签到的网站</th>
 													<td>
-														<input type="checkbox" id="qiandao_koolshare" name="qiandao_koolshare" onclick="update_visibility();">koolshare
 														<input type="checkbox" id="qiandao_baidu" name="qiandao_baidu" onclick="update_visibility();">baidu
 														<input type="checkbox" id="qiandao_v2ex" name="qiandao_v2ex" onclick="update_visibility();">v2ex
 														<input type="checkbox" id="qiandao_hostloc" name="qiandao_hostloc" onclick="update_visibility();">hostloc
 														<input type="checkbox" id="qiandao_acfun" name="qiandao_acfun" onclick="update_visibility();">acfun
 														<input type="checkbox" id="qiandao_bilibili" name="qiandao_bilibili" onclick="update_visibility();">bilibili
-														<input type="checkbox" id="qiandao_smzdm" name="qiandao_smzdm" onclick="update_visibility();">smzdm
-														<input type="checkbox" id="qiandao_xiami" name="qiandao_xiami" onclick="update_visibility();">xiami
 														<input type="checkbox" id="qiandao_163music" name="qiandao_163music" onclick="update_visibility();">163music
 														<input type="checkbox" id="qiandao_miui" name="qiandao_miui" onclick="update_visibility();">miui
 														<input type="checkbox" id="qiandao_52pojie" name="qiandao_52pojie" onclick="update_visibility();">52pojie
 														<input type="checkbox" id="qiandao_kafan" name="qiandao_kafan" onclick="update_visibility();">kafan
+														<input type="checkbox" id="qiandao_smzdm" name="qiandao_smzdm" onclick="update_visibility();">smzdm
+														<input type="checkbox" id="qiandao_zimuzu" name="qiandao_zimuzu" onclick="update_visibility();">zimuzu
+														<input type="checkbox" id="qiandao_gztown" name="qiandao_gztown" onclick="update_visibility();">gztown
+														<input type="checkbox" id="qiandao_meizu" name="qiandao_meizu" onclick="update_visibility();">meizu
+														<input type="checkbox" id="qiandao_hdpfans" name="qiandao_hdpfans" onclick="update_visibility();">hdpfans
+														<input type="checkbox" id="qiandao_chh" name="qiandao_chh" onclick="update_visibility();">chh
+														<input type="checkbox" id="qiandao_koolshare" name="qiandao_koolshare" onclick="update_visibility();">koolshare
 														<input type="checkbox" id="qiandao_right" name="qiandao_right" onclick="update_visibility();">right
-														<input type="checkbox" id="qiandao_mydigit" name="qiandao_mydigit" onclick="update_visibility();">mydigit
+														<input type="checkbox" id="qiandao_huawei" name="qiandao_huawei" onclick="update_visibility();">huawei
+														<input type="checkbox" id="qiandao_jd" name="qiandao_jd" onclick="update_visibility();">jd
 													</td>
 												</tr>
 												<tr id="_qiandao_koolshare" style="display:none">
