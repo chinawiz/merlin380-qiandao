@@ -10,20 +10,26 @@ generate_cookie_conf(){
 	echo_date "生成签到配置文件到/tmp/cookie.txt" >> $LOGFILE
 	rm -rf $SETTING_FILE
 	rm -rf $qiandao_root/cookie.txt
-	[ "$qiandao_koolshare" == "1" ] && [ -n "$qiandao_koolshare_setting" ] && echo -e "\"koolshare\"=`echo $qiandao_koolshare_setting | base64_decode`" >> $SETTING_FILE
 	[ "$qiandao_baidu" == "1" ] && [ -n "$qiandao_baidu_setting" ] && echo -e "\"baidu\"=`echo $qiandao_baidu_setting | base64_decode`" >> $SETTING_FILE
 	[ "$qiandao_v2ex" == "1" ] && [ -n "$qiandao_v2ex_setting" ] && echo -e "\"v2ex\"=`echo $qiandao_v2ex_setting | base64_decode`" >> $SETTING_FILE
 	[ "$qiandao_hostloc" == "1" ] && [ -n "$qiandao_hostloc_setting" ] && echo -e "\"hostloc\"=`echo $qiandao_hostloc_setting | base64_decode`" >> $SETTING_FILE
 	[ "$qiandao_acfun" == "1" ] && [ -n "$qiandao_acfun_setting" ] && echo -e "\"acfun\"=`echo $qiandao_acfun_setting | base64_decode`" >> $SETTING_FILE
 	[ "$qiandao_bilibili" == "1" ] && [ -n "$qiandao_bilibili_setting" ] && echo -e "\"bilibili\"=`echo $qiandao_bilibili_setting | base64_decode`" >> $SETTING_FILE
-	[ "$qiandao_smzdm" == "1" ] && [ -n "$qiandao_smzdm_setting" ] && echo -e "\"smzdm\"=`echo $qiandao_smzdm_setting | base64_decode`" >> $SETTING_FILE
-	[ "$qiandao_xiami" == "1" ] && [ -n "$qiandao_xiami_setting" ] && echo -e "\"xiami\"=`echo $qiandao_xiami_setting | base64_decode`" >> $SETTING_FILE
 	[ "$qiandao_163music" == "1" ] && [ -n "$qiandao_163music_setting" ] && echo -e "\"163music\"=`echo $qiandao_163music_setting | base64_decode`" >> $SETTING_FILE
 	[ "$qiandao_miui" == "1" ] && [ -n "$qiandao_miui_setting" ] && echo -e "\"miui\"=`echo $qiandao_miui_setting | base64_decode`" >> $SETTING_FILE
 	[ "$qiandao_52pojie" == "1" ] && [ -n "$qiandao_52pojie_setting" ] && echo -e "\"52pojie\"=`echo $qiandao_52pojie_setting | base64_decode`" >> $SETTING_FILE
 	[ "$qiandao_kafan" == "1" ] && [ -n "$qiandao_kafan_setting" ] && echo -e "\"kafan\"=`echo $qiandao_kafan_setting | base64_decode`" >> $SETTING_FILE
+	[ "$qiandao_smzdm" == "1" ] && [ -n "$qiandao_smzdm_setting" ] && echo -e "\"smzdm\"=`echo $qiandao_smzdm_setting | base64_decode`" >> $SETTING_FILE
+	[ "$qiandao_zimuzu" == "1" ] && [ -n "$qiandao_zimuzu_setting" ] && echo -e "\"zimuzu\"=`echo $qiandao_zimuzu_setting | base64_decode`" >> $SETTING_FILE
+	[ "$qiandao_gztown" == "1" ] && [ -n "$qiandao_gztown_setting" ] && echo -e "\"gztown\"=`echo $qiandao_gztown_setting | base64_decode`" >> $SETTING_FILE
+	[ "$qiandao_meizu" == "1" ] && [ -n "$qiandao_meizu_setting" ] && echo -e "\"meizu\"=`echo $qiandao_meizu_setting | base64_decode`" >> $SETTING_FILE
+	[ "$qiandao_hdpfans" == "1" ] && [ -n "$qiandao_hdpfans_setting" ] && echo -e "\"hdpfans\"=`echo $qiandao_hdpfans_setting | base64_decode`" >> $SETTING_FILE
+	[ "$qiandao_chh" == "1" ] && [ -n "$qiandao_chh_setting" ] && echo -e "\"chh\"=`echo $qiandao_chh_setting | base64_decode`" >> $SETTING_FILE
+	[ "$qiandao_koolshare" == "1" ] && [ -n "$qiandao_koolshare_setting" ] && echo -e "\"koolshare\"=`echo $qiandao_koolshare_setting | base64_decode`" >> $SETTING_FILE
 	[ "$qiandao_right" == "1" ] && [ -n "$qiandao_right_setting" ] && echo -e "\"right\"=`echo $qiandao_right_setting | base64_decode`" >> $SETTING_FILE
-	[ "$qiandao_mydigit" == "1" ] && [ -n "$qiandao_mydigit_setting" ] && echo -e "\"mydigit\"=`echo $qiandao_mydigit_setting | base64_decode`" >> $SETTING_FILE
+	[ "$qiandao_huawei" == "1" ] && [ -n "$qiandao_huawei_setting" ] && echo -e "\"huawei\"=`echo $qiandao_huawei_setting | base64_decode`" >> $SETTING_FILE
+	[ "$qiandao_jd" == "1" ] && [ -n "$qiandao_jd_setting" ] && echo -e "\"jd\"=`echo $qiandao_jd_setting | base64_decode`" >> $SETTING_FILE
+
 	if [ -f "$SETTING_FILE" ];then
 		ln -sf $SETTING_FILE $qiandao_root/cookie.txt
 	else

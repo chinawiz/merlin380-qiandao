@@ -81,7 +81,6 @@ var _responseLen;
 var noChange = 0;
 var params_input = ["qiandao_time"];
 var params_check = ["qiandao_enable"];
-// var params_sites = ["koolshare", "baidu", "v2ex", "hostloc", "acfun", "bilibili", "smzdm", "xiami", "163music", "miui", "52pojie", "kafan", "right", "mydigit"];
 var params_sites = ["baidu","v2ex","hostloc","acfun","bilibili","163music","miui","52pojie","kafan","smzdm","zimuzu","gztown","meizu","hdpfans","chh","koolshare","right","huawei","jd"];
 
 function E(e) {
@@ -455,12 +454,6 @@ function reload_Soft_Center() {
 														<input type="checkbox" id="qiandao_jd" name="qiandao_jd" onclick="update_visibility();">jd
 													</td>
 												</tr>
-												<tr id="_qiandao_koolshare" style="display:none">
-													<th style="width:18%"><b>koolshare cookie</b></th>
-													<td>
-														<div class="test-textarea" id="qiandao_koolshare_setting" windth="400px" contenteditable="true" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"><br /></div>
-													</td>
-												</tr>
 												<tr id="_qiandao_baidu" style="display:none">
 													<th style="width:18%"><b>baidu cookie</b></th>
 													<td>
@@ -491,18 +484,6 @@ function reload_Soft_Center() {
 														<div class="test-textarea" id="qiandao_bilibili_setting" windth="400px" contenteditable="true" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"><br /></div>
 													</td>
 												</tr>
-												<tr id="_qiandao_smzdm" style="display:none">
-													<th style="width:18%"><b>smzdm cookie</b></th>
-													<td>
-														<div class="test-textarea" id="qiandao_smzdm_setting" windth="400px" contenteditable="true" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"><br /></div>
-													</td>
-												</tr>
-												<tr id="_qiandao_xiami" style="display:none">
-													<th style="width:18%"><b>xiami cookie</b></th>
-													<td>
-														<div class="test-textarea" id="qiandao_xiami_setting" windth="400px" contenteditable="true" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"><br /></div>
-													</td>
-												</tr>
 												<tr id="_qiandao_163music" style="display:none">
 													<th style="width:18%"><b>163music cookie</b></th>
 													<td>
@@ -527,16 +508,66 @@ function reload_Soft_Center() {
 														<div class="test-textarea" id="qiandao_kafan_setting" windth="400px" contenteditable="true" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"><br /></div>
 													</td>
 												</tr>
+												<tr id="_qiandao_smzdm" style="display:none">
+													<th style="width:18%"><b>smzdm cookie</b></th>
+													<td>
+														<div class="test-textarea" id="qiandao_smzdm_setting" windth="400px" contenteditable="true" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"><br /></div>
+													</td>
+												</tr>
+												<tr id="_qiandao_zimuzu" style="display:none">
+													<th style="width:18%"><b>zimuzu cookie</b></th>
+													<td>
+														<div class="test-textarea" id="qiandao_zimuzu_setting" windth="400px" contenteditable="true" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"><br /></div>
+													</td>
+												</tr>
+												
+												<tr id="_qiandao_gztown" style="display:none">
+													<th style="width:18%"><b>gztown cookie</b></th>
+													<td>
+														<div class="test-textarea" id="qiandao_gztown_setting" windth="400px" contenteditable="true" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"><br /></div>
+													</td>
+												</tr>
+												<tr id="_qiandao_meizu" style="display:none">
+													<th style="width:18%"><b>meizu cookie</b></th>
+													<td>
+														<div class="test-textarea" id="qiandao_meizu_setting" windth="400px" contenteditable="true" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"><br /></div>
+													</td>
+												</tr>
+												<tr id="_qiandao_hdpfans" style="display:none">
+													<th style="width:18%"><b>hdpfans cookie</b></th>
+													<td>
+														<div class="test-textarea" id="qiandao_hdpfans_setting" windth="400px" contenteditable="true" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"><br /></div>
+													</td>
+												</tr>
+												<tr id="_qiandao_chh" style="display:none">
+													<th style="width:18%"><b>chh cookie</b></th>
+													<td>
+														<div class="test-textarea" id="qiandao_chh_setting" windth="400px" contenteditable="true" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"><br /></div>
+													</td>
+												</tr>
+
+												<tr id="_qiandao_koolshare" style="display:none">
+													<th style="width:18%"><b>koolshare cookie</b></th>
+													<td>
+														<div class="test-textarea" id="qiandao_koolshare_setting" windth="400px" contenteditable="true" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"><br /></div>
+													</td>
+												</tr>
 												<tr id="_qiandao_right" style="display:none">
 													<th style="width:18%"><b>right cookie</b></th>
 													<td>
 														<div class="test-textarea" id="qiandao_right_setting" windth="400px" contenteditable="true" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"><br /></div>
 													</td>
 												</tr>
-												<tr id="_qiandao_mydigit" style="display:none">
-													<th style="width:18%" title="数码之家需要填入帐号和密码,用英文逗号分隔,如zhangsan,123456"><b>mydigit (?)</b> <br/></th>
+												<tr id="_qiandao_huawei" style="display:none">
+													<th style="width:18%"><b>huawei cookie</b></th>
 													<td>
-														<div class="test-textarea" id="qiandao_mydigit_setting" windth="400px" contenteditable="true" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"><br /></div>
+														<div class="test-textarea" id="qiandao_huawei_setting" windth="400px" contenteditable="true" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"><br /></div>
+													</td>
+												</tr>
+												<tr id="_qiandao_jd" style="display:none">
+													<th style="width:18%"><b>jd cookie</b></th>
+													<td>
+														<div class="test-textarea" id="qiandao_jd_setting" windth="400px" contenteditable="true" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"><br /></div>
 													</td>
 												</tr>
 											</table>
